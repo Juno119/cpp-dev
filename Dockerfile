@@ -6,10 +6,10 @@ RUN apt-get update && \
         mesa-common-dev libxrandr-dev libxxf86vm-dev libxtst-dev libxvmc-dev libxaw7-dev \
         python3 python3-distutils python3.10-venv gfortran && \
     vcpkg install --clean-after-build gflags glog gtest rxcpp boost libtorch \
-        brpc grpc srpc evpp libuv dlib bzip2 \
+        brpc grpc srpc evpp libuv dlib bzip2 yaml-cpp \
         workflow cpp-taskflow spdlog sqlpp11 tbb \
         gstreamer numcpp murmurhash nlohmann-json folly \
-        rapidjson poco poco[netssl] librdkafka redis-plus-plus\
+        rapidjson poco poco[netssl] librdkafka redis-plus-plus zookeeper etcd-cpp-apiv3 \
         ffmpeg[x264,x265,ffprobe] \
         opencv4[dnn,contrib,eigen,ffmpeg,gdcm,ipp,jasper,nonfree,openmp,ovis,sfm,png,jpeg,world]  --recurse && \
     rm -rf /var/lib/apt/lists/*
